@@ -4,6 +4,7 @@ import { assets, blog_data, comments_data } from '../Assets/assets.js'
 import Navbar from '../components/Navbar.jsx'
 import Moment from 'moment'
 import Footer from '../components/Footer.jsx'
+import Loader from '../components/Loader.jsx'
 
 const Blog = () => {
   const {id} = useParams()
@@ -85,7 +86,7 @@ const Blog = () => {
       </div>
     </div>
    </div>
-  ):<div>loading</div>
+  ):<div><Loader/></div>
 }
 
 export default Blog
